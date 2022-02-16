@@ -129,7 +129,7 @@ int main(int argc, char * argv[]) {
         printf("\nEnter message: \n"); // Prompts user to enter message
         fgets(buffer, sizeof(buffer), stdin); // Reads entire message user inputs
         buffer[strlen(buffer) - 1] = '\0'; // Gets the message and excludes the null terminator
-        printf ("Sending: '%s'", buffer); // Displays to the client what is being sent
+        printf ("Sending: '%s'\n", buffer); // Displays to the client what is being sent
         
         // If/else statement that determines whether the user wants to close connection to the server.
         if (strcmp(buffer, stop) == 0) // If the user-input is equal to 'STOP' close program
@@ -138,7 +138,6 @@ int main(int argc, char * argv[]) {
             break; // Breaks out of the for loop and exits the program
             
         } else { // Else continue and send message to server
-            printf("You are sending '%s'. \n", buffer); // Prints to the console string stored inside buffer
             printf("The length of the string is %lu bytes. \n\n", strlen(buffer)); // Prints to the console the usigned int length of the string
             
             // Calls 'sendData' function to send message to each server
