@@ -8,7 +8,7 @@
 ### **Description:**
 This project use a server-client datagram and allows communinication between one client and multiple servers.
 For this program to work with multiple servers, the user must have 5 terminal windows open and connected to the csegrid (1 client and 4 servers).
-The client program can run on any gnode and work fine. However, the server programs must be ran on gnodes 1 - 4. 
+The client program can run on any gnode and work fine. However, the server programs must be ran on gnodes 1-4. 
 The config.txt contains the IP addresses of the 4 gnode servers and 4 port numbers. The port numbers are command line arguments that must be      
 entered when running the server programs (example below).
 
